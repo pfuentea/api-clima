@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Prompt:200,300,400,500" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>API Clima</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>CLIMA POR CIUDAD</h2>
+            </div>
+        </div>
+        <div class="row align-center text-center">
+            <div class="col">
+
+            </div>
+            <div class="col4">
+                <form>
+                    <div class="form-group">
+                        <label for="ciudad">Ciudad:</label>
+                        <input type="ciudad" class="form-control" id="ciudad" aria-describedby="cityHelp" placeholder="Ingrese Ciudad">
+                        <small id="citylHelp" class="form-text text-muted">Ingrese su ciudad, por favor.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Consultar</button>
+                </form>
+                <div id="resultado">
+                    <div id="fondo"></div>
+                    <p id="city"></p>
+                    <p id="temperatura"></p>
+                    <p id="coordenadas"></p>
+                </div>
+                
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+<script src="./js/clima.js"></script>
+</body>
+</html>
